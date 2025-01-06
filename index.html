@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>WeatherApp</h1>
+        <ul>
+            <li><a href="#search">Search Weather</a></li>
+            <li><a href="#live-location">Live Location Weather</a></li>
+            <li><a href="#forecast">Upcoming Forecast</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Weather Search Section -->
+        <section id="search">
+            <h2>Search Weather by City</h2>
+            <p>Enter a city name to get the current weather information.</p>
+            <form id="weather-form">
+                <input type="text" id="city" placeholder="Enter city name" required />
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="weather-result" class="result">
+                <!-- Weather data will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Live Location Section -->
+        <section id="live-location">
+            <h2>Live Location Weather</h2>
+            <p>Click below to get weather information based on your current location.</p>
+            <button id="get-location">Get Weather for My Location</button>
+            <div id="location-result" class="result">
+                <!-- Live location weather data will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Upcoming Forecast Section -->
+        <section id="forecast">
+            <h2>Upcoming Weather Forecast</h2>
+            <p>Get the 5-day weather forecast for your selected location.</p>
+            <div id="forecast-result" class="result">
+                <!-- Upcoming weather data will be dynamically inserted here -->
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
